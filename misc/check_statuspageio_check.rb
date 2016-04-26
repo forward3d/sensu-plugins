@@ -32,8 +32,6 @@ require 'json'
 require 'net/http'
 require 'sensu-plugin/check/cli'
 
-# Check the status of Github via their Status JSON API
-
 class StatusPageIO < Sensu::Plugin::Check::CLI
   
   option :endpoint,

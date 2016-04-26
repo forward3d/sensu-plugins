@@ -7,3 +7,4 @@ Here you'll find a collection of Sensu plugins that have been written for Forwar
 Misc Checks:
 
 * [check_statuspageio_status.rb](misc/README.md#check_statuspageio_statusrb)
+* [check_github_status.rb](misc/README.md#check_github_statusrb)
