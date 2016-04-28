@@ -58,9 +58,9 @@ class StatusPageIO < Sensu::Plugin::Check::CLI
     if status_indicator == "none"
       ok "#{service_name} is operational, message: '#{status_description}'"
     elsif status_indicator == "minor"
-      warning "#{service_name} is experiencing '#{status_indicator}' issues, message: '#{status_description}', reason: '#{json['incidents'][0]['name']}'"
+      warning "#{service_name} is experiencing '#{status_indicator}' issues, message: '#{status_description}'"
     elsif status_indicator == "major"
-      critical "#{service_name} is experiencing '#{status_indicator}' issues, message: '#{status_description}', reason: '#{json['incidents'][0]['name']}'"
+      critical "#{service_name} is experiencing '#{status_indicator}' issues, message: '#{status_description}'"
     else 
       unknown "The current operational status of #{service_name} is unknown"
     end
